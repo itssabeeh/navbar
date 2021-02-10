@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(165, 153, 137);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navbar-header {
+  background-color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.toggle-button {
+  border: none;
+  color: rgb(23, 111, 194);
+  transition: transform 0.5s;
+  background-color: transparent;
+}
+.toggle-button:hover {
+  transform: rotate(90deg);
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  background-color: azure;
+}
+.social-icons {
+  display: none;
+}
+.navbar li {
+  list-style-type: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgba(138, 130, 128, 0.781);
+  padding: 0.5rem;
+}
+.links a:hover {
+  color: rgb(23, 111, 194);
+}
+
+@media screen and (min-width: 800px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar {
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .links-container {
+    height: auto !important;
+    display: flex;
+  }
+  .links {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  .social-icons {
+    display: block;
+    display: flex;
+    align-self: center;
+    margin: 0;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: rgb(23, 111, 194);
+    transition: all 0.3s linear;
+  }
+  .social-icons a:hover {
+    color: lightblue;
+  }
+}
